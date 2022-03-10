@@ -22,7 +22,7 @@ db.once('open', async () => {
 
   // create friends
   for (let i = 0; i < 100; i += 1) {
-    const randomUserIndex = Math.floor(Math.random()*createdUsers.ops.length);
+    const randomUserIndex = Math.floor(Math.random() * createdUsers.ops.length);
     const { _id: userId } = createdUsers.ops[randomUserIndex];
 
     let friendId = userId;
